@@ -30,6 +30,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_local_notifications: 17.2.4  # replace with the latest version
+  timezone: 0.9.4  # replace with the latest version
+  permission_handler: 11.3.1  # Check for the latest version
+
+
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -57,11 +64,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - android/app/src/main/res/raw/clockalarm1.mp3
+    - android/app/src/main/res/raw/clockalarm2.mp3
+    - android/app/src/main/res/raw/clockalarm3.mp3
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
